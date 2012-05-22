@@ -15,7 +15,7 @@ const Ci = Components.interfaces;
 const Cr = Components.results;
 const Cu = Components.utils;
 
-let baseURL = "chrome://adblockplus-modules/content/";
+let baseURL = "chrome://autoproxy2-modules/content/";
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import(baseURL + "TimeLine.jsm");
@@ -360,7 +360,7 @@ var PolicyPrivate =
 {
 	classDescription: "Adblock Plus content policy",
 	classID: Components.ID("cfeaabe6-1dd1-11b2-a0c6-cb5c268894c9"),
-	contractID: "@adblockplus.org/abp/policy;1",
+	contractID: "@mozest.com/ap2/policy;1",
 	xpcom_categories: ["content-policy", "net-channel-event-sinks"],
 
 	//

@@ -18,7 +18,7 @@ const Cu = Components.utils;
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
 
-let baseURL = "chrome://adblockplus-modules/content/";
+let baseURL = "chrome://autoproxy2-modules/content/";
 Cu.import(baseURL + "Utils.jsm");
 Cu.import(baseURL + "FilterStorage.jsm");
 Cu.import(baseURL + "SubscriptionClasses.jsm");
@@ -30,7 +30,7 @@ Cu.import(baseURL + "Synchronizer.jsm");
  * ID of the only record stored
  * @type String
  */
-const filtersRecordID = "6fad6286-8207-46b6-aa39-8e0ce0bd7c49";
+const filtersRecordID = "feb03f52-f60f-4a8a-a193-8ddf3ff65ac4";
 
 /**
  * Weave tracker class (is set when Weave is initialized).
@@ -68,7 +68,7 @@ var Sync =
 	getEngine: function()
 	{
 		if (this.initialized)
-			return Weave.Engines.get("adblockplus");
+			return Weave.Engines.get("autoproxy2");
 		else
 			return null;
 	}
@@ -109,7 +109,7 @@ var SyncPrivate =
 
 function ABPEngine()
 {
-	Weave.SyncEngine.call(this, "AdblockPlus");
+	Weave.SyncEngine.call(this, "AutoProxy2");
 }
 ABPEngine.prototype =
 {

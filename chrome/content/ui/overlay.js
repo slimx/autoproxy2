@@ -11,18 +11,18 @@
 	let Cu = Components.utils;
 
 	// Use UIReady event to initialize in Fennec (bug 531071)
-	let eventName = Cu.import("chrome://adblockplus-modules/content/Utils.jsm", null).Utils.isFennec ? "UIReady" : "load";
+	let eventName = Cu.import("chrome://autoproxy2-modules/content/Utils.jsm", null).Utils.isFennec ? "UIReady" : "load";
 
 	window.addEventListener(eventName, function()
 	{
 		window.removeEventListener(eventName, arguments.callee, false);
 
-		if (!("@adblockplus.org/abp/public;1" in Cc))
+		if (!("@mozest.com/ap2/public;1" in Cc))
 		{
 			// Force initialization (in Fennec we won't be initialized at this point)
-			Cu.import("chrome://adblockplus-modules/content/Bootstrap.jsm", null).Bootstrap.startup();
+			Cu.import("chrome://autoproxy2-modules/content/Bootstrap.jsm", null).Bootstrap.startup();
 		}
 
-		Cu.import("chrome://adblockplus-modules/content/AppIntegration.jsm", null).AppIntegration.addWindow(window);
+		Cu.import("chrome://autoproxy2-modules/content/AppIntegration.jsm", null).AppIntegration.addWindow(window);
 	}, false);
 }

@@ -15,7 +15,7 @@ const Ci = Components.interfaces;
 const Cr = Components.results;
 const Cu = Components.utils;
 
-let baseURL = "chrome://adblockplus-modules/content/";
+let baseURL = "chrome://autoproxy2-modules/content/";
 Cu.import(baseURL + "Utils.jsm");
 Cu.import(baseURL + "Prefs.jsm");
 Cu.import(baseURL + "ContentPolicy.jsm");
@@ -173,11 +173,11 @@ var AppIntegrationFennec =
 			// Multi-process setup - we need to inject our content script into all tabs
 			let browsers = wrapper.window.Browser.browsers;
 			for (let i = 0; i < browsers.length; i++)
-				browsers[i].messageManager.loadFrameScript("chrome://adblockplus/content/fennecContent.js", true);
+				browsers[i].messageManager.loadFrameScript("chrome://autoproxy2/content/fennecContent.js", true);
 			wrapper.E("tabs").addEventListener("TabOpen", function(event)
 			{
 				let tab = wrapper.window.Browser.getTabFromChrome(event.originalTarget);
-				tab.browser.messageManager.loadFrameScript("chrome://adblockplus/content/fennecContent.js", true);
+				tab.browser.messageManager.loadFrameScript("chrome://autoproxy2/content/fennecContent.js", true);
 			}, false);
 
 			// Get notified about abp: link clicks for this window
@@ -212,7 +212,7 @@ var AppIntegrationFennec =
 
 	openFennecSubscriptionDialog: function(/**WindowWrapper*/ wrapper, /**String*/ url, /**String*/ title)
 	{
-		wrapper.window.importDialog(null, "chrome://adblockplus/content/ui/fennecSubscription.xul");
+		wrapper.window.importDialog(null, "chrome://autoproxy2/content/ui/fennecSubscription.xul");
 	
 		// Copied from Fennec's PromptService.js
 		// add a width style to prevent a element to grow larger 
@@ -261,7 +261,7 @@ var AppIntegrationFennec =
 
 function onCreateOptions(wrapper, event)
 {
-	if (event.originalTarget.getAttribute("addonID") != "{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}")
+	if (event.originalTarget.getAttribute("addonID") != "{856f66d5-fc00-403c-812b-db4236de1480}")
 		return;
 
 	wrapper.E("adblockplus-subscription-list").addEventListener("command", function(event)
@@ -307,7 +307,7 @@ function updateSubscriptionList(wrapper)
 	currentSubscription = (currentSubscription.length ? currentSubscription[0] : null);
 	
 	let xhr = Cc["@mozilla.org/xmlextras/xmlhttprequest;1"].createInstance(Ci.nsIXMLHttpRequest);
-	xhr.open("GET", "chrome://adblockplus/content/ui/subscriptions.xml", false);
+	xhr.open("GET", "chrome://autoproxy2/content/ui/subscriptions.xml", false);
 	xhr.send(null);
 	if (!xhr.responseXML)
 		return;

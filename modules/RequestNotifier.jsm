@@ -15,7 +15,7 @@ const Ci = Components.interfaces;
 const Cr = Components.results;
 const Cu = Components.utils;
 
-let baseURL = "chrome://adblockplus-modules/content/";
+let baseURL = "chrome://autoproxy2-modules/content/";
 Cu.import(baseURL + "Utils.jsm");
 Cu.import(baseURL + "FilterClasses.jsm");
 Utils.runAsync(Cu.import, Cu, baseURL + "ContentPolicy.jsm");  // delay to avoid circular imports

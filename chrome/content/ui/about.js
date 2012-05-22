@@ -124,7 +124,7 @@ function setExtensionData(name, version, homepage, authors, contributors, transl
 	E("translators").textContent = translators.join(", ");
 
 	let request = new XMLHttpRequest();
-	request.open("GET", "chrome://adblockplus/content/ui/subscriptions.xml");
+	request.open("GET", "chrome://autoproxy2/content/ui/subscriptions.xml");
 	request.addEventListener("load", setSubscriptionAuthors, false);
 	request.send(null);
 }

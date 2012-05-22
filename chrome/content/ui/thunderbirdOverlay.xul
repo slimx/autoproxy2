@@ -4,7 +4,7 @@
 	 - version 2.0 (the "License"). You can obtain a copy of the License at
 	 - http://mozilla.org/MPL/2.0/. -->
 
-<?xul-overlay href="chrome://adblockplus/content/ui/overlayGeneral.xul"?>
+<?xul-overlay href="chrome://autoproxy2/content/ui/overlayGeneral.xul"?>
 
 <overlay id="abp-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<!-- Window extensions -->

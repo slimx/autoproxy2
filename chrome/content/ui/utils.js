@@ -9,7 +9,7 @@ const Ci = Components.interfaces;
 const Cr = Components.results;
 const Cu = Components.utils;
 
-let baseURL = "chrome://adblockplus-modules/content/";
+let baseURL = "chrome://autoproxy2-modules/content/";
 Cu.import(baseURL + "AppIntegration.jsm");
 Cu.import(baseURL + "ContentPolicy.jsm");
 Cu.import(baseURL + "FilterClasses.jsm");

@@ -8,7 +8,7 @@
 
 .wizard-header
 {
-	-moz-binding: url(chrome://adblockplus/content/ui/sendReport.xul#headerBinding) !important;
+	-moz-binding: url(chrome://autoproxy2/content/ui/sendReport.xul#headerBinding) !important;
 	padding: 10px 5px !important;
 }
 

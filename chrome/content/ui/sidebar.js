@@ -436,7 +436,7 @@ function doBlock() {
 	if (filter && filter instanceof WhitelistFilter)
 		return;
 
-	openDialog("chrome://adblockplus/content/ui/composer.xul", "_blank", "chrome,centerscreen,resizable,dialog=no,dependent", item.nodes, item.orig);
+	openDialog("chrome://autoproxy2/content/ui/composer.xul", "_blank", "chrome,centerscreen,resizable,dialog=no,dependent", item.nodes, item.orig);
 }
 
 function editFilter()

@@ -32,7 +32,7 @@ var Utils =
 	 */
 	get addonID()
 	{
-		return "{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}";
+		return "{856f66d5-fc00-403c-812b-db4236de1480}";
 	},
 
 	/**
@@ -110,7 +110,7 @@ var Utils =
 	 */
 	getString: function(name)
 	{
-		let stringBundle = Services.strings.createBundle("chrome://adblockplus/locale/global.properties");
+		let stringBundle = Services.strings.createBundle("chrome://autoproxy2/locale/global.properties");
 		Utils.getString = function(name)
 		{
 			return stringBundle.GetStringFromName(name);
@@ -302,7 +302,7 @@ var Utils =
 		}
 		else
 		{
-			Utils.windowWatcher.openWindow(null, "chrome://adblockplus/content/ui/filters.xul", "_blank", "chrome,centerscreen,resizable,dialog=no", {wrappedJSObject: filter});
+			Utils.windowWatcher.openWindow(null, "chrome://autoproxy2/content/ui/filters.xul", "_blank", "chrome,centerscreen,resizable,dialog=no", {wrappedJSObject: filter});
 		}
 	},
 
@@ -352,7 +352,7 @@ var Utils =
 	 */
 	loadDocLink: function(/**String*/ linkID)
 	{
-		let baseURL = "chrome://adblockplus-modules/content/";
+		let baseURL = "chrome://autoproxy2-modules/content/";
 		Cu.import(baseURL + "Prefs.jsm");
 
 		let link = Prefs.documentation_link.replace(/%LINK%/g, linkID).replace(/%LANG%/g, Utils.appLocale);

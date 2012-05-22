@@ -32,8 +32,8 @@ function Initializer() {}
 Initializer.prototype =
 {
 	classDescription: "Adblock Plus initializer",
-	contractID: "@adblockplus.org/abp/startup;1",
-	classID: Components.ID("{d32a3c00-4ed3-11de-8a39-0800200c9a66}"),
+	contractID: "@mozest.com/ap2/startup;1",
+	classID: Components.ID("{e67eaea3-1f54-4996-9b6b-c76abe1513c3}"),
 	_xpcom_categories: [{ category: "app-startup", service: true }],
 
 	QueryInterface: XPCOMUtils.generateQI([Ci.nsIObserver, Ci.nsISupportsWeakReference]),
@@ -56,14 +56,14 @@ Initializer.prototype =
 					try
 					{
 						// Gecko 2.0 and higher - chrome URLs can be loaded directly
-						Cu.import("chrome://adblockplus-modules/content/Bootstrap.jsm");
+						Cu.import("chrome://autoproxy2-modules/content/Bootstrap.jsm");
 					}
 					catch (e)
 					{
 						// Gecko 1.9.x - have to convert chrome URLs to file URLs first
 						let chromeRegistry = Cc["@mozilla.org/chrome/chrome-registry;1"].getService(Ci.nsIChromeRegistry);
 						let ioService = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);
-						let bootstrapURL = chromeRegistry.convertChromeURL(ioService.newURI("chrome://adblockplus-modules/content/Bootstrap.jsm", null, null));
+						let bootstrapURL = chromeRegistry.convertChromeURL(ioService.newURI("chrome://autoproxy2-modules/content/Bootstrap.jsm", null, null));
 						Cu.import(bootstrapURL.spec);
 					}
 					Bootstrap.startup();
@@ -75,9 +75,9 @@ Initializer.prototype =
 					observerService.removeObserver(this, "profile-after-change");
 				}catch(e) {}
 				observerService.removeObserver(this, "quit-application");
-				if ("@adblockplus.org/abp/private;1" in Cc)
+				if ("@mozest.com/ap2/private;1" in Cc)
 				{
-					let baseURL = Cc["@adblockplus.org/abp/private;1"].getService(Ci.nsIURI);
+					let baseURL = Cc["@mozest.com/ap2/private;1"].getService(Ci.nsIURI);
 					Cu.import(baseURL.spec + "Bootstrap.jsm");
 					Bootstrap.shutdown(false);
 				}

@@ -5,9 +5,9 @@
 	 - http://mozilla.org/MPL/2.0/. -->
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://adblockplus/skin/sidebar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://autoproxy2/skin/sidebar.css" type="text/css"?>
 
-<!DOCTYPE page SYSTEM "chrome://adblockplus/locale/sidebar.dtd">
+<!DOCTYPE page SYSTEM "chrome://autoproxy2/locale/sidebar.dtd">
 
 <page
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"

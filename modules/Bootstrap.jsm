@@ -18,7 +18,7 @@ const Cu = Components.utils;
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
 
-let baseURL = "chrome://adblockplus-modules/content/";
+let baseURL = "chrome://autoproxy2-modules/content/";
 Cu.import(baseURL + "Utils.jsm");
 Cu.import(baseURL + "TimeLine.jsm");
 
@@ -27,7 +27,7 @@ if (publicURL instanceof Ci.nsIMutable)
 	publicURL.mutable = false;
 
 const cidPublic = Components.ID("5e447bce-1dd2-11b2-b151-ec21c2b6a135");
-const contractIDPublic = "@adblockplus.org/abp/public;1";
+const contractIDPublic = "@mozest.com/ap2/public;1";
 let factoryPublic =
 {
 	createInstance: function(outer, iid)

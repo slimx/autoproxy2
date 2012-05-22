@@ -16,7 +16,7 @@ const Ci = Components.interfaces;
 const Cr = Components.results;
 const Cu = Components.utils;
 
-let baseURL = "chrome://adblockplus-modules/content/";
+let baseURL = "chrome://autoproxy2-modules/content/";
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import(baseURL + "TimeLine.jsm");
@@ -990,7 +990,7 @@ WindowWrapper.prototype =
 		{
 			let subscription = {url: url, title: title, disabled: false, external: false,
 													mainSubscriptionTitle: mainSubscriptionTitle, mainSubscriptionURL: mainSubscriptionURL};
-			this.window.openDialog("chrome://adblockplus/content/ui/subscriptionSelection.xul", "_blank",
+			this.window.openDialog("chrome://autoproxy2/content/ui/subscriptionSelection.xul", "_blank",
 														 "chrome,centerscreen,resizable,dialog=no", subscription, null);
 		}
 		else
@@ -1200,7 +1200,7 @@ WindowWrapper.prototype =
 		if (wnd)
 			wnd.focus();
 		else
-			this.window.openDialog("chrome://adblockplus/content/ui/sendReport.xul", "_blank", "chrome,centerscreen,resizable=no", this.window.content, this.getCurrentLocation());
+			this.window.openDialog("chrome://autoproxy2/content/ui/sendReport.xul", "_blank", "chrome,centerscreen,resizable=no", this.window.content, this.getCurrentLocation());
 	},
 
 	/**
@@ -1254,13 +1254,13 @@ WindowWrapper.prototype =
 			if (sidebar && (!Prefs.detachsidebar || !sidebar.hidden))
 			{
 				this.E("abp-sidebar-splitter").hidden = !sidebar.hidden;
-				this.E("abp-sidebar-browser").setAttribute("src", sidebar.hidden ? "chrome://adblockplus/content/ui/sidebar.xul" : "about:blank");
+				this.E("abp-sidebar-browser").setAttribute("src", sidebar.hidden ? "chrome://autoproxy2/content/ui/sidebar.xul" : "about:blank");
 				sidebar.hidden = !sidebar.hidden;
 				if (sidebar.hidden)
 					this.getBrowser().contentWindow.focus();
 			}
 			else
-				this.detachedSidebar = this.window.openDialog("chrome://adblockplus/content/ui/sidebarDetached.xul", "_blank", "chrome,resizable,dependent,dialog=no");
+				this.detachedSidebar = this.window.openDialog("chrome://autoproxy2/content/ui/sidebarDetached.xul", "_blank", "chrome,resizable,dependent,dialog=no");
 		}
 	},
 
@@ -1465,7 +1465,7 @@ WindowWrapper.prototype =
 		if (!item)
 			return;
 
-		this.window.openDialog("chrome://adblockplus/content/ui/composer.xul", "_blank", "chrome,centerscreen,resizable,dialog=no,dependent", [node], item);
+		this.window.openDialog("chrome://autoproxy2/content/ui/composer.xul", "_blank", "chrome,centerscreen,resizable,dialog=no,dependent", [node], item);
 	}
 };
 
@@ -1616,6 +1616,7 @@ function addSubscription()
 	// Add "acceptable ads" subscription for new users and user updating from old ABP versions.
 	// Don't add it for users of privacy subscriptions (use a hardcoded list for now).
 	let addAcceptable = (Utils.versionComparator.compare(Prefs.lastVersion, "2.0b.3269") < 0);
+    //slimx todo
 	let privacySubscriptions = {
 		"https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt": true,
 		"https://easylist-downloads.adblockplus.org/easyprivacy.txt": true,
@@ -1664,14 +1665,14 @@ function addSubscription()
 		let wrapper = (wrappers.length ? wrappers[0] : null);
 		if (wrapper && wrapper.addTab)
 		{
-			wrapper.addTab("chrome://adblockplus/content/ui/firstRun.xhtml");
+			wrapper.addTab("chrome://autoproxy2/content/ui/firstRun.xhtml");
 		}
 		else
 		{
 			let dialogSource = '\
 				<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>\
 				<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="document.title=content.document.title" buttons="accept" width="500" height="600">\
-					<iframe type="content-primary" flex="1" src="chrome://adblockplus/content/ui/firstRun.xhtml"/>\
+					<iframe type="content-primary" flex="1" src="chrome://autoproxy2/content/ui/firstRun.xhtml"/>\
 				</dialog>';
 			Utils.windowWatcher.openWindow(wrapper ? wrapper.window : null,
 																		 "data:application/vnd.mozilla.xul+xml," + encodeURIComponent(dialogSource),
@@ -1683,7 +1684,7 @@ function addSubscription()
 	{
 		// Load subscriptions data
 		let request = Cc["@mozilla.org/xmlextras/xmlhttprequest;1"].createInstance(Ci.nsIXMLHttpRequest);
-		request.open("GET", "chrome://adblockplus/content/ui/subscriptions.xml");
+		request.open("GET", "chrome://autoproxy2/content/ui/subscriptions.xml");
 		request.addEventListener("load", function()
 		{
 			let node = Utils.chooseFilterSubscription(request.responseXML.getElementsByTagName("subscription"));

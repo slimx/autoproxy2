@@ -4,10 +4,10 @@
  * http://mozilla.org/MPL/2.0/.
  */
 
-if (!("@adblockplus.org/abp/policy;1" in Components.classes))
-	Components.utils.import("chrome://adblockplus-modules/content/ContentPolicyRemote.jsm");
+if (!("@mozest.com/ap2/policy;1" in Components.classes))
+	Components.utils.import("chrome://autoproxy2-modules/content/ContentPolicyRemote.jsm");
 if (!("@mozilla.org/network/protocol/about;1?what=abp-elemhidehit" in Components.classes))
-	Components.utils.import("chrome://adblockplus-modules/content/ElemHideRemote.jsm");
+	Components.utils.import("chrome://autoproxy2-modules/content/ElemHideRemote.jsm");
 
 addEventListener("click", function(event)
 {

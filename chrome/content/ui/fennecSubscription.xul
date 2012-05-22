@@ -7,7 +7,7 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
 <!DOCTYPE dialog [
-<!ENTITY % subst SYSTEM "chrome://adblockplus/locale/subscriptionSelection.dtd">
+<!ENTITY % subst SYSTEM "chrome://autoproxy2/locale/subscriptionSelection.dtd">
 <!ENTITY % prompts SYSTEM "chrome://browser/locale/prompt.dtd">
 %subst;
 %prompts;

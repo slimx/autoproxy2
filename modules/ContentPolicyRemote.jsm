@@ -17,7 +17,7 @@ const Cu = Components.utils;
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
-Cu.import("chrome://adblockplus-modules/content/Utils.jsm");
+Cu.import("chrome://autoproxy2-modules/content/Utils.jsm");
 
 /**
  * nsIContentPolicy and nsIChannelEventSink implementation
@@ -27,7 +27,7 @@ var PolicyRemote =
 {
 	classDescription: "Adblock Plus content policy",
 	classID: Components.ID("094560a0-4fed-11e0-b8af-0800200c9a66"),
-	contractID: "@adblockplus.org/abp/policy-remote;1",
+	contractID: "@mozest.com/ap2/policy-remote;1",
 	xpcom_categories: ["content-policy", "net-channel-event-sinks"],
 
 	cache: new Cache(512),
