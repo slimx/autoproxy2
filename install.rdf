@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+
+<!-- This Source Code is subject to the terms of the Mozilla Public License
+   - version 2.0 (the "License"). You can obtain a copy of the License at
+   - http://mozilla.org/MPL/2.0/. -->
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}</em:id>
+    <em:version>2.0.4b.3465</em:version>
+    <em:name>Adblock Plus</em:name>
+    <em:description>Ads were yesterday!</em:description>
+    <em:creator>Wladimir Palant</em:creator><em:contributor>Claude Lespagnol aka Efdur</em:contributor><em:contributor>Nickolay Ponomarev</em:contributor><em:contributor>Kevin Keller</em:contributor><em:contributor>Fabrice Desré</em:contributor><em:contributor>Hubird</em:contributor><em:contributor>Günther Beyer (opoloo.de)</em:contributor><em:translator>Ahmet Serkan Tıratacı</em:translator><em:translator>Aivo Kuhlberg</em:translator><em:translator>Algimantas Margevičius</em:translator><em:translator>AlleyKat</em:translator><em:translator>Anusuk Sangubon(Jaideejung007)</em:translator><em:translator>Dagobert_78</em:translator><em:translator>Genti Ereqi</em:translator><em:translator>Jakub Tománek</em:translator><em:translator>Jonas Slivka</em:translator><em:translator>Joni Heinonen</em:translator><em:translator>Jose Sun</em:translator><em:translator>Ján Kendi (Jacen)</em:translator><em:translator>KNTRO</em:translator><em:translator>Ken</em:translator><em:translator>Kristján Bjarni Guðmundsson</em:translator><em:translator>Leszek(teo)Życzkowski</em:translator><em:translator>Luana Di Muzio - BabelZilla</em:translator><em:translator>Manuel Meixide</em:translator><em:translator>Mark Tyndall</em:translator><em:translator>Martin Srebotnjak</em:translator><em:translator>Mauro José da Silva</em:translator><em:translator>Maybee</em:translator><em:translator>Mikael Hiort af Ornäs</em:translator><em:translator>Mikes Kaszmán István</em:translator><em:translator>Milupo</em:translator><em:translator>Nguyễn Mạnh Hùng</em:translator><em:translator>Ninnetyer</em:translator><em:translator>Onno Ekker</em:translator><em:translator>Premier</em:translator><em:translator>Raul Pimentel</em:translator><em:translator>Regmos</em:translator><em:translator>Reza_NA</em:translator><em:translator>SiiiE</em:translator><em:translator>Stefan Lewitas</em:translator><em:translator>Teboga</em:translator><em:translator>Toni Barrera</em:translator><em:translator>Urko</em:translator><em:translator>Wim Benes</em:translator><em:translator>Wladimir Palant</em:translator><em:translator>bahramm</em:translator><em:translator>blackdire</em:translator><em:translator>catcat</em:translator><em:translator>el_libre</em:translator><em:translator>gogo</em:translator><em:translator>jojaba</em:translator><em:translator>k2jp</em:translator><em:translator>kapetance</em:translator><em:translator>knight00931</em:translator><em:translator>markh</em:translator><em:translator>pirlouy</em:translator><em:translator>pitdicker</em:translator><em:translator>rookie</em:translator><em:translator>sushizang</em:translator><em:translator>temperror</em:translator><em:translator>ultravioletu</em:translator><em:translator>Бауржан Муфтахидинов</em:translator><em:translator>Баярсайхан Энхтайван</em:translator><em:translator>ДакСРБИЈА</em:translator><em:translator>Ивайло Йовчев (s0urce)</em:translator><em:translator>Тимофій Бабич</em:translator><em:translator>Էդուարդ Բաբայան (edo248)</em:translator><em:translator>مؤيد مارديني</em:translator>
+    <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+    <em:type>2</em:type>
+    <em:updateURL>https://adblockplus.org/devbuilds/adblockplus/update.rdf?reqVersion=%REQ_VERSION%&amp;id=%ITEM_ID%&amp;version=%ITEM_VERSION%&amp;maxAppVersion=%ITEM_MAXAPPVERSION%&amp;status=%ITEM_STATUS%&amp;appID=%APP_ID%&amp;appVersion=%APP_VERSION%&amp;appOS=%APP_OS%&amp;appABI=%APP_ABI%&amp;locale=%APP_LOCALE%&amp;currentAppVersion=%CURRENT_APP_VERSION%&amp;updateType=%UPDATE_TYPE%</em:updateURL>
+    <em:aboutURL>chrome://adblockplus/content/ui/about.xul</em:aboutURL>
+    <em:optionsURL>chrome://adblockplus/content/ui/settings.xul</em:optionsURL>
+    <em:optionsType>2</em:optionsType>
+
+    <em:localized>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:creator>Wladimir Palant</em:creator><em:contributor>Claude Lespagnol aka Efdur</em:contributor><em:contributor>Nickolay Ponomarev</em:contributor><em:contributor>Kevin Keller</em:contributor><em:contributor>Fabrice Desré</em:contributor><em:contributor>Hubird</em:contributor><em:contributor>Günther Beyer (opoloo.de)</em:contributor><em:translator>Ahmet Serkan Tıratacı</em:translator><em:translator>Aivo Kuhlberg</em:translator><em:translator>Algimantas Margevičius</em:translator><em:translator>AlleyKat</em:translator><em:translator>Anusuk Sangubon(Jaideejung007)</em:translator><em:translator>Dagobert_78</em:translator><em:translator>Genti Ereqi</em:translator><em:translator>Jakub Tománek</em:translator><em:translator>Jonas Slivka</em:translator><em:translator>Joni Heinonen</em:translator><em:translator>Jose Sun</em:translator><em:translator>Ján Kendi (Jacen)</em:translator><em:translator>KNTRO</em:translator><em:translator>Ken</em:translator><em:translator>Kristján Bjarni Guðmundsson</em:translator><em:translator>Leszek(teo)Życzkowski</em:translator><em:translator>Luana Di Muzio - BabelZilla</em:translator><em:translator>Manuel Meixide</em:translator><em:translator>Mark Tyndall</em:translator><em:translator>Martin Srebotnjak</em:translator><em:translator>Mauro José da Silva</em:translator><em:translator>Maybee</em:translator><em:translator>Mikael Hiort af Ornäs</em:translator><em:translator>Mikes Kaszmán István</em:translator><em:translator>Milupo</em:translator><em:translator>Nguyễn Mạnh Hùng</em:translator><em:translator>Ninnetyer</em:translator><em:translator>Onno Ekker</em:translator><em:translator>Premier</em:translator><em:translator>Raul Pimentel</em:translator><em:translator>Regmos</em:translator><em:translator>Reza_NA</em:translator><em:translator>SiiiE</em:translator><em:translator>Stefan Lewitas</em:translator><em:translator>Teboga</em:translator><em:translator>Toni Barrera</em:translator><em:translator>Urko</em:translator><em:translator>Wim Benes</em:translator><em:translator>Wladimir Palant</em:translator><em:translator>bahramm</em:translator><em:translator>blackdire</em:translator><em:translator>catcat</em:translator><em:translator>el_libre</em:translator><em:translator>gogo</em:translator><em:translator>jojaba</em:translator><em:translator>k2jp</em:translator><em:translator>kapetance</em:translator><em:translator>knight00931</em:translator><em:translator>markh</em:translator><em:translator>pirlouy</em:translator><em:translator>pitdicker</em:translator><em:translator>rookie</em:translator><em:translator>sushizang</em:translator><em:translator>temperror</em:translator><em:translator>ultravioletu</em:translator><em:translator>Бауржан Муфтахидинов</em:translator><em:translator>Баярсайхан Энхтайван</em:translator><em:translator>ДакСРБИЈА</em:translator><em:translator>Ивайло Йовчев (s0urce)</em:translator><em:translator>Тимофій Бабич</em:translator><em:translator>Էդուարդ Բաբայան (edo248)</em:translator><em:translator>مؤيد مارديني</em:translator>
+        <em:name>Adblock Plus</em:name>
+        <em:description>Ads were yesterday!</em:description>
+        <em:homepageURL>http://adblockplus.org/en/</em:homepageURL></Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>zh-CN</em:locale>
+        <em:creator>Wladimir Palant</em:creator><em:contributor>Claude Lespagnol aka Efdur</em:contributor><em:contributor>Nickolay Ponomarev</em:contributor><em:contributor>Kevin Keller</em:contributor><em:contributor>Fabrice Desré</em:contributor><em:contributor>Hubird</em:contributor><em:contributor>Günther Beyer (opoloo.de)</em:contributor><em:translator>Ahmet Serkan Tıratacı</em:translator><em:translator>Aivo Kuhlberg</em:translator><em:translator>Algimantas Margevičius</em:translator><em:translator>AlleyKat</em:translator><em:translator>Anusuk Sangubon(Jaideejung007)</em:translator><em:translator>Dagobert_78</em:translator><em:translator>Genti Ereqi</em:translator><em:translator>Jakub Tománek</em:translator><em:translator>Jonas Slivka</em:translator><em:translator>Joni Heinonen</em:translator><em:translator>Jose Sun</em:translator><em:translator>Ján Kendi (Jacen)</em:translator><em:translator>KNTRO</em:translator><em:translator>Ken</em:translator><em:translator>Kristján Bjarni Guðmundsson</em:translator><em:translator>Leszek(teo)Życzkowski</em:translator><em:translator>Luana Di Muzio - BabelZilla</em:translator><em:translator>Manuel Meixide</em:translator><em:translator>Mark Tyndall</em:translator><em:translator>Martin Srebotnjak</em:translator><em:translator>Mauro José da Silva</em:translator><em:translator>Maybee</em:translator><em:translator>Mikael Hiort af Ornäs</em:translator><em:translator>Mikes Kaszmán István</em:translator><em:translator>Milupo</em:translator><em:translator>Nguyễn Mạnh Hùng</em:translator><em:translator>Ninnetyer</em:translator><em:translator>Onno Ekker</em:translator><em:translator>Premier</em:translator><em:translator>Raul Pimentel</em:translator><em:translator>Regmos</em:translator><em:translator>Reza_NA</em:translator><em:translator>SiiiE</em:translator><em:translator>Stefan Lewitas</em:translator><em:translator>Teboga</em:translator><em:translator>Toni Barrera</em:translator><em:translator>Urko</em:translator><em:translator>Wim Benes</em:translator><em:translator>Wladimir Palant</em:translator><em:translator>bahramm</em:translator><em:translator>blackdire</em:translator><em:translator>catcat</em:translator><em:translator>el_libre</em:translator><em:translator>gogo</em:translator><em:translator>jojaba</em:translator><em:translator>k2jp</em:translator><em:translator>kapetance</em:translator><em:translator>knight00931</em:translator><em:translator>markh</em:translator><em:translator>pirlouy</em:translator><em:translator>pitdicker</em:translator><em:translator>rookie</em:translator><em:translator>sushizang</em:translator><em:translator>temperror</em:translator><em:translator>ultravioletu</em:translator><em:translator>Бауржан Муфтахидинов</em:translator><em:translator>Баярсайхан Энхтайван</em:translator><em:translator>ДакСРБИЈА</em:translator><em:translator>Ивайло Йовчев (s0urce)</em:translator><em:translator>Тимофій Бабич</em:translator><em:translator>Էդուարդ Բաբայան (edo248)</em:translator><em:translator>مؤيد مارديني</em:translator>
+        <em:name>Adblock Plus</em:name>
+        <em:description>广告已成往事！</em:description>
+        <em:homepageURL>https://adblockplus.org/zh_CN/</em:homepageURL></Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>zh-TW</em:locale>
+        <em:creator>Wladimir Palant</em:creator><em:contributor>Claude Lespagnol aka Efdur</em:contributor><em:contributor>Nickolay Ponomarev</em:contributor><em:contributor>Kevin Keller</em:contributor><em:contributor>Fabrice Desré</em:contributor><em:contributor>Hubird</em:contributor><em:contributor>Günther Beyer (opoloo.de)</em:contributor><em:translator>Ahmet Serkan Tıratacı</em:translator><em:translator>Aivo Kuhlberg</em:translator><em:translator>Algimantas Margevičius</em:translator><em:translator>AlleyKat</em:translator><em:translator>Anusuk Sangubon(Jaideejung007)</em:translator><em:translator>Dagobert_78</em:translator><em:translator>Genti Ereqi</em:translator><em:translator>Jakub Tománek</em:translator><em:translator>Jonas Slivka</em:translator><em:translator>Joni Heinonen</em:translator><em:translator>Jose Sun</em:translator><em:translator>Ján Kendi (Jacen)</em:translator><em:translator>KNTRO</em:translator><em:translator>Ken</em:translator><em:translator>Kristján Bjarni Guðmundsson</em:translator><em:translator>Leszek(teo)Życzkowski</em:translator><em:translator>Luana Di Muzio - BabelZilla</em:translator><em:translator>Manuel Meixide</em:translator><em:translator>Mark Tyndall</em:translator><em:translator>Martin Srebotnjak</em:translator><em:translator>Mauro José da Silva</em:translator><em:translator>Maybee</em:translator><em:translator>Mikael Hiort af Ornäs</em:translator><em:translator>Mikes Kaszmán István</em:translator><em:translator>Milupo</em:translator><em:translator>Nguyễn Mạnh Hùng</em:translator><em:translator>Ninnetyer</em:translator><em:translator>Onno Ekker</em:translator><em:translator>Premier</em:translator><em:translator>Raul Pimentel</em:translator><em:translator>Regmos</em:translator><em:translator>Reza_NA</em:translator><em:translator>SiiiE</em:translator><em:translator>Stefan Lewitas</em:translator><em:translator>Teboga</em:translator><em:translator>Toni Barrera</em:translator><em:translator>Urko</em:translator><em:translator>Wim Benes</em:translator><em:translator>Wladimir Palant</em:translator><em:translator>bahramm</em:translator><em:translator>blackdire</em:translator><em:translator>catcat</em:translator><em:translator>el_libre</em:translator><em:translator>gogo</em:translator><em:translator>jojaba</em:translator><em:translator>k2jp</em:translator><em:translator>kapetance</em:translator><em:translator>knight00931</em:translator><em:translator>markh</em:translator><em:translator>pirlouy</em:translator><em:translator>pitdicker</em:translator><em:translator>rookie</em:translator><em:translator>sushizang</em:translator><em:translator>temperror</em:translator><em:translator>ultravioletu</em:translator><em:translator>Бауржан Муфтахидинов</em:translator><em:translator>Баярсайхан Энхтайван</em:translator><em:translator>ДакСРБИЈА</em:translator><em:translator>Ивайло Йовчев (s0urce)</em:translator><em:translator>Тимофій Бабич</em:translator><em:translator>Էդուարդ Բաբայան (edo248)</em:translator><em:translator>مؤيد مارديني</em:translator>
+        <em:name>Adblock Plus</em:name>
+        <em:description>廣告已成過去式！</em:description>
+        <em:homepageURL>https://adblockplus.org/zh_TW/</em:homepageURL></Description>
+    </em:localized>
+
+    <em:targetApplication>
+      <Description>
+        <!-- conkeror -->
+        <em:id>{a79fe89b-6662-4ff4-8e88-09950ad4dfde}</em:id>
+        <em:minVersion>0.1</em:minVersion>
+        <em:maxVersion>100.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- fennec -->
+        <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
+        <em:minVersion>8.0</em:minVersion>
+        <em:maxVersion>15.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- fennec2 -->
+        <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+        <em:minVersion>11.0a1</em:minVersion>
+        <em:maxVersion>15.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- firefox -->
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>8.0</em:minVersion>
+        <em:maxVersion>15.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- seamonkey -->
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:minVersion>2.5</em:minVersion>
+        <em:maxVersion>2.12a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- thunderbird -->
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>8.0</em:minVersion>
+        <em:maxVersion>15.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
